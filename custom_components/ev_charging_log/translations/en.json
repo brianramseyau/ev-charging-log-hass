@@ -1,0 +1,48 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "EV Charging Log companion",
+        "description": "Lets the EV Charging Log app read your car's odometer history, and nothing else. Generate the secret in the app's Settings, under Car odometer (Home Assistant).",
+        "data": {
+          "odometer_entity": "Odometer",
+          "telemetry_entity": "Telemetry last updated",
+          "secret": "Secret from the app"
+        },
+        "data_description": {
+          "odometer_entity": "A distance sensor reporting in km, for example the Odometer sensor from hass-byd-vehicle.",
+          "telemetry_entity": "A timestamp sensor holding when the car itself last reported, for example Telemetry last updated.",
+          "secret": "Only its SHA-256 hash is stored."
+        }
+      },
+      "not_recorded": {
+        "title": "History isn't being recorded",
+        "description": "Home Assistant's recorder is set to exclude {entities}. The app will only be able to read the current odometer, not fill in past charges. Include the entities in the recorder configuration to fix this, or submit to continue anyway."
+      }
+    },
+    "error": {
+      "same_entity": "Choose two different entities.",
+      "secret_too_short": "The secret must be at least 32 characters. Copy the whole secret from the app."
+    },
+    "abort": {
+      "single_instance_allowed": "Already configured. Use Configure to change the entities or replace the secret."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "EV Charging Log companion",
+        "description": "To rotate the secret, paste the new one from the app. Leave it blank to keep the current secret.",
+        "data": {
+          "odometer_entity": "Odometer",
+          "telemetry_entity": "Telemetry last updated",
+          "secret": "New secret from the app"
+        }
+      }
+    },
+    "error": {
+      "same_entity": "Choose two different entities.",
+      "secret_too_short": "The secret must be at least 32 characters. Copy the whole secret from the app."
+    }
+  }
+}

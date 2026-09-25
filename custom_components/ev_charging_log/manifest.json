@@ -1,0 +1,14 @@
+{
+  "domain": "ev_charging_log",
+  "name": "EV Charging Log companion",
+  "codeowners": ["@brianramseyau"],
+  "config_flow": true,
+  "dependencies": ["http", "recorder"],
+  "documentation": "https://github.com/brianramseyau/ev-charging-log-hass",
+  "integration_type": "service",
+  "iot_class": "local_push",
+  "issue_tracker": "https://github.com/brianramseyau/ev-charging-log-hass/issues",
+  "requirements": [],
+  "single_config_entry": true,
+  "version": "0.1.0"
+}
