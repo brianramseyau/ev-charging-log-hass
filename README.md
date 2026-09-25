@@ -38,8 +38,10 @@ odometer history.
 
 ## Installation
 
-1. In HACS, open the menu → **Custom repositories**, add
-   `https://github.com/brianramseyau/ev-charging-log-hass` with type
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=brianramseyau&repository=ev-charging-log-hass&category=integration)
+
+1. Click the badge above, or in HACS open the menu → **Custom repositories**,
+   add `https://github.com/brianramseyau/ev-charging-log-hass` with type
    **Integration**.
 2. Install **EV Charging Log companion** and restart Home Assistant.
 3. In EV Charging Log, open **Settings → Car odometer (Home Assistant)**, enter
