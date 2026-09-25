@@ -10,3 +10,4 @@ First release.
 - Config flow with entity pickers filtered to distance and timestamp sensors,
   and a warning when the recorder excludes either entity.
 - Options flow to change the entities or rotate the secret.
+- Brand icon (shown by Home Assistant 2026.3 and later).
